@@ -14,13 +14,13 @@
         <legend>Put your details here!</legend>
 
         <label>Put your name here</label>
-        <input type="text" />
+        <input type="text" class="nameInput">
 
         <label>Put your birthday here</label>
-        <input type="date" />
+        <input type="date" class="jahre">
 
         <label>Upload a photo of yours</label>
-        <input type="file" /><br />
+        <input type="file" name="photoField"><br />
 
         <label>Pick your favorite color</label>
         <input id="primaryColor" type="color" /><br />
@@ -31,18 +31,22 @@
         <textarea
           placeholder="Write a paragraph about yourself"
           maxlength="140"
+          class="aboutMe"
         ></textarea>
         <p class="countermessage">Type all you need in 140 characters</p>
 
         <label>Pick your Skills: </label><br />
 
-        <li><input type="checkbox" />JavaScript</li>
-        <li><input type="checkbox" />Ruby</li>
-        <li><input type="checkbox" />Python</li>
-        <li><input type="checkbox" />Java</li>
-        <li><input type="checkbox" />PHP</li>
+        <li class="checky"><input type="checkbox" />JavaScript</li>
+        <li class="checky"><input type="checkbox" />Ruby</li>
+        <li class="checky"><input type="checkbox" />Python</li>
+        <li class="checky"><input type="checkbox" />Java</li>
+        <li class="checky"><input type="checkbox" />PHP</li>
       </fieldset>
     </form>
+    <button class="create">Create CV</button> 
+    <button class="reset">Reset</button>
+    <div class="bigDiv" id="CVDiv"></div>
 
     <script src="js/index.js"></script>
   </body>
